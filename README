@@ -1,0 +1,2 @@
+Provides a wrapper around the Clickatell HTTP/S API for sending SMS Messages, querying message statuses,
+getting your balance.

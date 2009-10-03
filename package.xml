@@ -14,16 +14,13 @@
   </maintainer>
   </maintainers>
  <release>
-  <version>0.6.3</version>
-  <date>2008-04-15</date>
+  <version>0.6.4</version>
+  <date>2009-10-03</date>
   <license>PHP License</license>
   <state>beta</state>
   <notes>* Bug fixes in sendmsg ()
-* Added SMS_Clickatell::routecoverage function to query if a msisdn is
-  routable via Clickatell
-* Refactoring to work only with PHP 5
-* Work out the actual required features so clickatells updated routing
-  engine can be less problematic
+* Disable using HTTPS as Clickatell are having issues with their SSL
+  certificate on their load balancer.
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.4.0"/>
@@ -42,10 +39,20 @@
   <provides type="function" name="SMS_Clickatell::_curl" />
   <provides type="function" name="SMS_Clickatell::querymsg" />
   <filelist>
-   <file role="php" baseinstalldir="SMS" md5sum="7e15bb8533039c7d850be76f5c7f9c09" name="Clickatell.php"/>
+   <file role="php" baseinstalldir="SMS" md5sum="b56dfe3e25161d111952d4e6ee04a350" name="Clickatell.php"/>
   </filelist>
  </release>
  <changelog>
+ <release>
+  <version>0.6.4</version>
+  <date>2009-10-03</date>
+  <license>PHP License</license>
+  <state>beta</state>
+  <notes>
+ * Disable using HTTPS as Clickatell are having issues with their SSL
+  certificate on their load balancer.
+  </notes>
+   </release>
    <release>
     <version>0.6.3</version>
     <date>2008-04-15</date>

@@ -33,7 +33,7 @@ class SMS_Clickatell {
      * Clickatell API Server
      * @var string
      */
-    private $_api_server = "https://api.clickatell.com";
+    private $_api_server = "http://api.clickatell.com";
 
     /**
      * Clickatell API Server Session ID
